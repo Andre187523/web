@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reseñas - Daniss Cafetería</title>
@@ -13,7 +14,10 @@
         </h1>
     </header>
 
-    <nav>
+    
+                <nav>
+                <button class="nav-toggle" aria-label="Toggle navigation"></button>
+                
         <ul>
             <li><a href="nosotros.html">Sobre Nosotros</a></li>
             <li><a href="menu.html">Menú</a></li>
@@ -63,5 +67,14 @@
             <p>&copy;| 2024 | Dannis Cafetería| <a href="#">Términos y Condiciones</a> - <a href="#">Políticas de Privacidad</a> | Desarrollado por <a href="#">Backend Studio</a> </p>
         </div>
     </footer>
-</body>
+
+                    <script>
+                    const navToggle = document.querySelector('.nav-toggle');
+                    const nav = document.querySelector('nav ul');
+                    navToggle.addEventListener('click', () => {
+                        nav.classList.toggle('nav-open');
+                    });
+                    </script>
+                    </body>
+                    
 </html>
